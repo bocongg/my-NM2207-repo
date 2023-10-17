@@ -1,0 +1,24 @@
+---
+title: "Week 9 Diary Entry"
+author: "Lew Bo Cong"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Diary Entry (Week 9)
+
+### (1) What is the topic that you have finalized? (Answer in 1 or 2 sentences)
+Due to the ageing population, the healthcare sector in Singapore is facing various challenges, i.e. bed crunch. To gain a deeper insight on this specific issue, we analyse datasets made available by the Ministry of Health.
+
+### (2) What are the data sources that you have curated so far? (Answer 1 or 2 sentences).
+Two data sources have been curated.
+<br>
+
+a) Beds Occupancy Rate. **([Link](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)))**
+<br>
+
+b) Waiting Time for Admission to Ward. **([Link](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/waiting-time-for-admission-to-ward))**
