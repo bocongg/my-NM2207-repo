@@ -1,0 +1,51 @@
+---
+title: "Diary Entry"
+author: "Lew Bo Cong"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Diary Entry (Week 10)
+
+### (1) What is the question that you are going to answer? (Answer: One sentence that ends with a question mark that could act like the title of your data story)
+What contributes to the difference in wait times for admission to wards in local public hospitals?
+
+### (2) Why is this an important question? (Answer: 3 sentences, each of which has some evidence, e.g., “According to the United Nations...” to justify why the question you have chosen is important).
+The CNA had reported in April 2023 that the median waiting time for ward admissions had increased from about 5 hours to 7.2 hours during that period^[1](https://www.channelnewsasia.com/singapore/moh-hospital-waiting-times-7-hours-covid-19-3442136)^. The health ministry had explained that it was due to the rise in number of older patients with more complex medical needs requiring longer hospitalisation^[1](https://www.channelnewsasia.com/singapore/moh-hospital-waiting-times-7-hours-covid-19-3442136)^. Due to the ageing population in Singapore, long waiting time for admission to wards has been a long-standing issue over the years, and it was further exacerbated by the Covid-19 pandemic^[2](https://www.channelnewsasia.com/singapore/hospitals-beds-waiting-time-50-hours-admission-ng-teng-fong-sengkang-3014596),[3](https://www.straitstimes.com/singapore/health/most-public-hospitals-saw-more-ae-patients-in-past-week-compared-with-past-month)^.
+
+### (3) Which rows and columns of the dataset will be used to answer this question? (Answer: Actual names of the variables in the dataset that you plan to use)
+The main dataset will be the wait times in each hospital across different dates.
+Supplementary dataset includes the bed occupancy rate in each hospital across different dates.
+
+```{r, eval=TRUE,echo=TRUE}
+library(tidyverse)
+wait_times <- read_csv("../Proj dataset/wt-for-admission-to-ward_week39y2023.csv")
+glimpse(wait_times)
+
+bed_occ <- read_csv("../Proj dataset/bed-occupancy-rate_week39y2023.csv")
+glimpse(bed_occ)
+```
+
+
+### (4) Challenges and errors that I faced and how I overcame them.
+I faced some errors when I tried to read my dataset in R. It was originally in ".xlsx" format, which resulted in a tibble of 1 x 1 and unable to display any data. After saving my excel sheet in ".csv" format, I could read my data but its display was erroneous, because there were unnecessary table heading and spaces which disrupted the data structure crucial for a .csv file. After tidying the file by removing unnecessary portions of the table, I managed to produce the expected dataset with correct number of columns and rows.
+
+-------------
+
+## Diary Entry (Week 9)
+
+### (1) What is the topic that you have finalized? (Answer in 1 or 2 sentences)
+Due to the ageing population, the healthcare sector in Singapore is facing various challenges, i.e. bed crunch. To gain a deeper insight on this specific issue, we analyse datasets made available by the Ministry of Health.
+
+### (2) What are the data sources that you have curated so far? (Answer 1 or 2 sentences).
+Two data sources have been curated.
+<br>
+
+a) Beds Occupancy Rate. **([Link](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)))**
+<br>
+
+b) Waiting Time for Admission to Ward. **([Link](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/waiting-time-for-admission-to-ward))**
