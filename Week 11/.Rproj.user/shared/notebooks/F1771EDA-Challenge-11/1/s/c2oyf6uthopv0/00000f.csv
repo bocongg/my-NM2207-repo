@@ -1,0 +1,37 @@
+"0","glimpse(data)"
+"1","Rows: 53"
+"1",""
+"1","
+"
+"1","Columns: 25"
+"1",""
+"1","
+"
+"1","$ fips                           [3m[38;5;246m<chr>[39m[23m ""02"", ""01"", ""05"", ""04"", ""06"", ""08"", ""0…
+$ country                        [3m[38;5;246m<chr>[39m[23m ""US"", ""US"", ""US"", ""US"", ""US"", ""US"", ""U…
+$ state                          [3m[38;5;246m<chr>[39m[23m ""AK"", ""AL"", ""AR"", ""AZ"", ""CA"", ""CO"", ""C…
+$ county                         [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ hsa                            [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ hsaName                        [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ level                          [3m[38;5;246m<chr>[39m[23m ""state"", ""state"", ""state"", ""state"", ""s…
+$ lat                            [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ locationId                     [3m[38;5;246m<chr>[39m[23m ""iso1:us#iso2:us-ak"", ""iso1:us#iso2:us…
+$ long                           [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ population                     [3m[38;5;246m<int>[39m[23m 731545, 4903185, 3017804, 7278717, 395…
+$ hsaPopulation                  [3m[38;5;246m<int>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ metrics                        [3m[38;5;246m<df[,14]>[39m[23m <data.frame[26 x 14]>
+$ riskLevels                     [3m[38;5;246m<df[,6]>[39m[23m <data.frame[26 x 6]>
+$ cdcTransmissionLevel           [3m[38;5;246m<int>[39m[23m 2, 4, 3, 3, 1, 4, 4, 1, 4, 4, 2, 3…
+$ communityLevels                [3m[38;5;246m<df[,2]>[39m[23m <data.frame[26 x 2]>
+$ actuals                        [3m[38;5;246m<df[,19]>[39m[23m <data.frame[26 x 19]>
+$ annotations                    [3m[38;5;246m<df[,30]>[39m[23m <data.frame[26 x 30]>
+$ lastUpdatedDate                [3m[38;5;246m<chr>[39m[23m ""2023-10-30"", ""2023-10-30"", ""2023-1…
+$ url                            [3m[38;5;246m<chr>[39m[23m ""https://covidactnow.org/us/alaska-ak""…
+$ metricsTimeseries              [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 14]>], [<data.f…
+$ actualsTimeseries              [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 20]>], [<data.…
+$ riskLevelsTimeseries           [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 3]>], [<data.f…
+$ cdcTransmissionLevelTimeseries [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 2]>], [<data.frame…
+$ communityLevelsTimeseries      [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 3]>], [<data.frame…"
+"1",""
+"1","
+"

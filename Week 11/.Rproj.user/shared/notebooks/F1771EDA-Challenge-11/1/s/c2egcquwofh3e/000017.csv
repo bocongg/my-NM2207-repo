@@ -1,0 +1,38 @@
+"0",""
+"0","library(cowplot)"
+"2","
+Attaching package: ‘cowplot’
+
+"
+"2","The following object is masked from ‘package:lubridate’:
+
+    stamp
+
+"
+"0","fig1 <- ggplot(data_to_plot, aes(x=Date_Alaska,y=Cases_Alaska)) +"
+"0","geom_point() + labs(x=""Date"",y=""Cases"", title=""Alaska"") + theme_bw()"
+"0",""
+"0","fig2 <- ggplot(data_to_plot, aes(x=Date_California,y=Cases_California)) +"
+"0","geom_point() + labs(x=""Date"",y=""Cases"", title=""California"") + theme_bw()"
+"0",""
+"0","fig3 <- ggplot(data_to_plot, aes(x=Date_New_Jersey,y=Cases_New_Jersey)) +"
+"0","geom_point() + labs(x=""Date"",y=""Cases"", title=""New Jersey"") + theme_bw()"
+"0",""
+"0","fig4 <- ggplot(data_to_plot, aes(x=Date_Tennessee,y=Cases_Tennessee)) +"
+"0","geom_point() + labs(x=""Date"",y=""Cases"", title=""Tennessee"") + theme_bw()"
+"0",""
+"0","fig5 <- ggplot(data_to_plot, aes(x=Date_District_of_Columbia,y=Cases_District_of_Columbia)) +"
+"0","geom_point() + labs(x=""Date"",y=""Cases"", title=""District of Columbia"") + theme_bw()"
+"0",""
+"0","plot_grid(fig1 + theme(legend.justification = c(0,1)),"
+"0","fig2 + theme(legend.justification = c(1,0)),"
+"0","fig3 + theme(legend.justification = c(0,1)),"
+"0","fig4 + theme(legend.justification = c(1,0)),"
+"0","fig5 + theme(legend.justification = c(0,1)),"
+"0","align = ""v"", axis = ""lr"", nrow=3,"
+"0","ncol = 2,labels = LETTERS[1:5],"
+"0","rel_heights = c(1,2))"
+"2","Warning: [38;5;252mRemoved 2 rows containing missing values (`geom_point()`).[39m"
+"2","Warning: [38;5;252mRemoved 2 rows containing missing values (`geom_point()`).[39m"
+"2","Warning: [38;5;252mRemoved 2 rows containing missing values (`geom_point()`).[39m"
+"2","Warning: [38;5;252mRemoved 2 rows containing missing values (`geom_point()`).[39m"

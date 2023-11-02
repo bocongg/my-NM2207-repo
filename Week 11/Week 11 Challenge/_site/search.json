@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Week 11 Challenge",
+    "section": "",
+    "text": "i. What is the population in various states of U.S.A?\n\n\n\n\n\n\n\nii. What fraction of the population was infected ?\n\n\n\n\n\n\n\niii. What fraction of infected persons recovered ?\n\n\n\n\n\n\n\niv. What fraction of the population is currently vaccinated ?\n\n\nWarning: Removed 3 rows containing missing values (`position_stack()`).\n\n\n\n\n\n\n\nv. What was the transmission-like in the various states ?\n\n\n\n\n\n\n\nvi. How did the disease progress since it started ?\n\n\nWarning: Removed 2 rows containing missing values (`geom_point()`).\nRemoved 2 rows containing missing values (`geom_point()`).\nRemoved 2 rows containing missing values (`geom_point()`).\nRemoved 2 rows containing missing values (`geom_point()`)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]

@@ -1,0 +1,3 @@
+"0",""
+"0","time_series_transmission[seq(1,1300,by=100),] %>% pivot_longer(cols=Alaska:District_of_Columbia,names_to=""Countries"",values_to=""Transmission"") %>%"
+"0","ggplot(aes(x=Date,y=Transmission,colour=Countries,group=Countries)) + geom_point(show.legend=TRUE) + labs(x=""Date"",y=""Transmission Level"") + theme_bw()"
