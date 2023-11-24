@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "NM2207 - Data story project"
+  back-to-top-navigation: true
+  search: false
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About me
+  page-footer:
+    border: true
+    background: secondary
+    left: 
+      - text: "Copyright © 2023 Lew Bo Cong"
+    right:
+    - text: This site is built with <a href="https://quarto.org/">Quarto</a> and <a href="https://www.rstudio.com/"><img src="https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg" class="img-fluid" alt="RStudio" width="60"></a>.
+
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+    page-layout: full
+    smooth-scroll: true
+
+editor: visual
+
